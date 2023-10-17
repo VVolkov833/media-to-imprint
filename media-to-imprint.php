@@ -6,7 +6,7 @@ Version: 0.0.1
 Requires at least: 5.8
 Tested up to: 6.3
 Requires PHP: 7.4
-Author: Firmcatalyst, Vadim Volkov, Aude Jamier, Melanie Nickl
+Author: Firmcatalyst: Vadim Volkov, Melanie Nickl, Aude Jamier
 Author URI: https://firmcatalyst.com/about/
 License: GPL v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
