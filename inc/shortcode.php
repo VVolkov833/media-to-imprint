@@ -2,7 +2,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-add_shortcode('media_source_list', function () {
+add_shortcode('media_sources_list', function () {
     global $wpdb;
 
     // get the sources list, faster with query than WP_Query()

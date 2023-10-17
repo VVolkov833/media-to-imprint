@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: FCP Media to Imprint
-Description: It adds the "Source" field to the media items, and once filled it is printed via <code>[fcp-media-to-imprint]</code> shortcode, which gotta be pasted to the Imprint page.
+Plugin Name: Media to Imprint
+Description: It adds the "Source" field to the media items, and once filled it is printed via <code>[media_sources_list]</code> shortcode, which gotta be pasted to the Imprint page.
 Version: 0.0.1
 Requires at least: 5.8
 Tested up to: 6.3
