@@ -1,0 +1,9 @@
+.imprint-source-pin {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.imprint-source-pin label {
+    margin-right: auto;
+}

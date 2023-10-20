@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Media to Imprint
-Description: It adds the "Source" field to the media items, and once filled it is printed via <code>[media_sources_list]</code> shortcode, which gotta be pasted to the Imprint page.
-Version: 0.0.1
+Description: This plugin enables you to store media source information within the media meta field. Simply add the shortcode <code>[media_sources_list]</code> to your Imprint page to display all the source values in one list.
+Version: 1.0.0
 Requires at least: 5.8
 Tested up to: 6.3
 Requires PHP: 7.4
@@ -15,13 +15,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 defined( 'ABSPATH' ) || exit;
 
-
-define( 'FCMTI_DEV', false );
-define( 'FCMTI_VER', get_file_data( __FILE__, [ 'ver' => 'Version' ] )[ 'ver' ] . ( FCMTI_DEV ? time() : '' ) );
-
-define( 'FCMTI_URL', plugin_dir_url( __FILE__ ) );
 define( 'FCMTI_DIR', plugin_dir_path( __FILE__ ) );
-
 
 require FCMTI_DIR . 'inc/admin-fields.php';
 require FCMTI_DIR . 'inc/shortcode.php';

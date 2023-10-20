@@ -10,17 +10,17 @@ add_shortcode('media_sources_list', function () {
         SELECT sources.meta_value
         FROM '.$wpdb->posts.'
             LEFT JOIN '.$wpdb->postmeta.' AS sources
-                ON ID = sources.post_id AND sources.meta_key = \'source\'
+                ON ID = sources.post_id AND sources.meta_key = %s
             LEFT JOIN '.$wpdb->postmeta.' AS pins
-                ON ID = pins.post_id AND pins.meta_key = \'source-pin\'
-        WHERE post_type = \'attachment\'
+                ON ID = pins.post_id AND pins.meta_key = %s
+        WHERE post_type = %s
             AND sources.meta_value IS NOT NULL
-            AND sources.meta_value != \'\'
+            AND sources.meta_value != ""
         ORDER BY COALESCE(pins.meta_value, 0) DESC, sources.meta_value ASC
-    '));
+    ', 'source', 'source-pin', 'attachment'));
 
     if ( empty( $results ) ) { return ''; }
     
-    return '<ul>' . implode( '', array_map( function($a) { return '<li>' . esc_html($a) . '</li>'; }, $results ) ) . '</ul>';
+    return '<ul class="imprint-list">' . implode( '', array_map( function($a) { return '<li>' . esc_html($a) . '</li>'; }, $results ) ) . '</ul>';
 
 });
