@@ -1,4 +1,4 @@
-=== First Screen CSS & Settings ===
+=== Media to Imprint ===
 Contributors: Firmcatalyst
 Tags: imprint, media, media source
 Requires at least: 5.8
