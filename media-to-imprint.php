@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Media to Imprint
-Description: This plugin enables you to store media source information within the media meta field. Simply add the shortcode <code>[media_sources_list]</code> to your Imprint page to display all the source values in one list.
+Description: This plugin enables you to store media source information for the Imprint page within each media entity separately. To display all the source values in one list, simply add the shortcode <code>[media_sources_list]</code> to your Imprint page.
 Version: 1.0.0
 Requires at least: 5.8
 Tested up to: 6.3

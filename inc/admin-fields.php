@@ -23,27 +23,16 @@ add_filter('attachment_fields_to_edit', function ($form_fields, $post) {
         ',
     ];
 
-    return $form_fields;
-}, 10, 2);
-
-
-// Add the buttons to manipulate the "Source" content
-add_action('admin_enqueue_scripts', function($hook) {
-
-    if ($hook !== 'media-upload.php' && $hook !== 'media.php' && $hook !== 'upload.php') { return; }
-
-    $name = 'imprint-source-buttons';
-
+    // Add the buttons to manipulate the "Source" content every time the meta appears
     $script_contents = file_get_contents( FCMTI_DIR . 'assets/meta-buttons.js' );
-    wp_register_script( $name, '' );
-    wp_enqueue_script( $name );
-    wp_add_inline_script( $name, $script_contents );
+    $form_fields['source-pin']['html'] .= '<script>'.$script_contents.'</script>';
 
     $style_content = file_get_contents( FCMTI_DIR . 'assets/meta-buttons.css' );
-    wp_register_style( $name, false );
-    wp_enqueue_style( $name );
-    wp_add_inline_style( $name, $style_content );
-}, 20);
+    $form_fields['source-pin']['html'] .= '<style>'.$style_content.'</style>';
+
+
+    return $form_fields;
+}, 10, 2);
 
 
 // Save the field values
