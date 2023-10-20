@@ -10,7 +10,7 @@ This plugin enables you to store media source information for the Imprint page w
 
 ## Demo
 
-[firmcatalyst.com/media-to-imprint](https://firmcatalyst.com/media-to-imprint)
+Coming soon
 
 ## Usage
 
