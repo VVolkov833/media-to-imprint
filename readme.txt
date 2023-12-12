@@ -23,10 +23,6 @@ Media to Imprint is a lightweight WordPress plugin that enhances your media libr
 * **Copyright Options:** Easily add copyright, trademark (TM), or registered (R) symbols to your media sources.
 * **Pin to Top:** Prioritize specific media items by pinning them to the top of the list.
 
-== Screenshots ==
-
-1. Media source field
-
 = Demo =
 
 Coming soon
@@ -50,6 +46,10 @@ Coming soon
 == Development ==
 
 You can customize the code to suit your requirements or suggest improvements on [GitHub](https://github.com/VVolkov833/media-to-imprint). The code is transparent and easy to understand.
+
+== Screenshots ==
+
+1. Media source field
 
 == Frequently Asked Questions ==
 
