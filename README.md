@@ -1,12 +1,13 @@
 # Media to Imprint
 
-This plugin enables you to store media source information for the Imprint page within each media entity separately. To display all the source values in one list, simply add the shortcode `[media_sources_list]` to your Imprint page.
+Media to Imprint is a lightweight WordPress plugin that enhances your media library by adding a "Source" field to media items. Once filled, this source information can be displayed effortlessly on your Imprint page using the `[media_sources_list]` shortcode.
 
 ## Features
 
-* Simplifies the management of media for your Imprint page
-* Attaches the source data to the media directly
-* Prints the list of sources via the shortcode
+* **Simple Integration:** Seamlessly add a "Source" field to your media items.
+* **Effortless Display:** Use the `[media_sources_list]` shortcode on your Imprint page to showcase the list of media sources.
+* **Copyright Options:** Easily add copyright, trademark (TM), or registered (R) symbols to your media sources.
+* **Pin to Top:** Prioritize specific media items by pinning them to the top of the list.
 
 ## Demo
 
@@ -14,9 +15,11 @@ Coming soon
 
 ## Usage
 
-* Install and activate the plugin
-* Navigate to "Media" in the left sidebar of your wp-admin
-* Select a media item
-* Fill in the "Source for Imprint" filed for each media item
-* Place the shortcode `[media_sources_list]` on your Imprint page
-* All the filled sources will be displayed at the location of the shortcode
+1. Install and activate the plugin.
+2. Navigate to your media library.
+3. Edit a media item, and you'll find a new "Source for Imprint" field.
+4. Fill in the necessary information, including image title, ID, author name, and platform domain.
+5. Optional: Use the buttons below to add copyright, TM, or R symbols.
+6. Optional: Check the box to pin the media item to the top of the list.
+7. Save your changes.
+8. Paste the `[media_sources_list]` shortcode on your Imprint page to showcase your media sources effortlessly.
